@@ -49,7 +49,7 @@ module ActionView
           add_options(
             country_options_for_select(
               value, priority_countries, skipped_countries
-            ),
+            ).html_safe,
             options, value
           ), html_options
         )
